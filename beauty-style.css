@@ -77,6 +77,7 @@ a {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 24px;
+  padding-bottom: 96px;
 }
 .header__container {
   display: flex;
@@ -113,6 +114,9 @@ a {
 }
 /* top section */
 
+/* .container__top{
+  padding-bottom: 178px;
+} */
 .header__background {
   background-image: url(img/top_backgraund.jpg);
   background-repeat: no-repeat;
@@ -166,24 +170,24 @@ a {
 .about-us__inner {
   display: flex;
 }
-.about__photo-decor{
+.about__photo-decor {
   border-radius: 180px;
 }
 
 /* why-we */
-.why__we-blok{
+.why__we-blok {
   width: 100%;
   max-width: 316px;
   border: 1px solid;
   border-radius: 32px;
 }
-.block__inner{
+.block__inner {
   padding: 24px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.block__inner-text{
+.block__inner-text {
   display: flex;
   justify-content: space-between;
 }
@@ -193,19 +197,33 @@ a {
   font-weight: 700;
   line-height: 1.16;
   margin-bottom: 40px;
+  padding-left: 314px;
 }
-
 .we__container {
   width: 100%;
   max-width: 1060px;
-  
+  margin-left: auto;
+  margin-right: auto;
 }
 .why__we-inner {
   display: flex;
   justify-content: space-between;
 }
 
+/* our procids */
+
+.procids__iner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* find us */
+
+.find__top {
+  display: flex;
+  justify-content: center;
+}
 .text__decor {
   font-family: "Play";
 }
