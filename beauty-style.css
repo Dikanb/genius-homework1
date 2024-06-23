@@ -60,6 +60,7 @@ h3,
 h4,
 p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 ul {
   list-style-type: none;
@@ -68,6 +69,11 @@ a {
   text-decoration: none;
 }
 /* header nav */
+.header {
+  background-image: url(img/top_backgraund.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .header__logo {
   padding-top: 16px;
   padding-left: 90px;
@@ -113,15 +119,19 @@ a {
   padding-right: 32px;
 }
 /* top section */
+.container__top {
+  display: block;
+  width: 100%;
+  max-width: 529px;
+  height: 408px;
+  padding-left: 205px;
+  padding-bottom: 126.5px;
+  padding-top: 16px;
+}
 
 /* .container__top{
   padding-bottom: 178px;
 } */
-.header__background {
-  background-image: url(img/top_backgraund.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 
 .header__subtitle {
   font-size: 18px;
@@ -130,9 +140,8 @@ a {
 .header__title {
   font-family: "Play";
   color: var(--color-brand);
-  font-size: 140px;
+  font-size: 114px;
   font-weight: 700;
-  line-height: 1.22;
 }
 
 .call__button {
@@ -151,8 +160,16 @@ a {
 .under__button-text {
   font-size: 12px;
   line-height: 1.5;
+  width: 238px;
+  padding-top: 14px;
+  padding-left: 14px;
 }
 /* about-us */
+
+.transform__text {
+  margin-bottom: 40px;
+  font-size: 22px;
+}
 .text__decor {
   font-family: "Play";
   font-size: 64px;
@@ -169,17 +186,42 @@ a {
 }
 .about-us__inner {
   display: flex;
+  height: 695px;
 }
-.about__photo-decor {
+.about-us__photo {
+  width: 100%;
+  max-width: 499px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.about__second-photo {
+  display: flex;
+  align-self: flex-end;
+  width: 100%;
+  max-width: 327px;
+  height: 327px;
+  background-image: url(/img/lady__face2.jpg);
+  border-radius: 180px;
+}
+.about__first-photo {
+  width: 100%;
+  max-width: 327px;
+  height: 327px;
+  background-image: url(/img/lady_face1.jpg);
   border-radius: 180px;
 }
 
 /* why-we */
+.why__we {
+  background-image: url(/img/background-vaves.jpg);
+}
 .why__we-blok {
   width: 100%;
   max-width: 316px;
   border: 1px solid;
   border-radius: 32px;
+  background-color: #ffffff;
 }
 .block__inner {
   padding: 24px 32px;
@@ -321,8 +363,6 @@ a {
   background-color: #011c44;
 }
 
-.footer__list-item {
-}
 .footer__nav {
   color: #ffffff;
 }
@@ -346,8 +386,6 @@ a {
   display: flex;
   justify-content: space-between;
   color: var(--white-color);
-}
-.footer__contacts {
 }
 .icons__footer {
   color: var(--white-color);
