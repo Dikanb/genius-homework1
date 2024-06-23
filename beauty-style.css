@@ -201,20 +201,20 @@ a {
   width: 100%;
   max-width: 327px;
   height: 327px;
-  background-image: url(/img/lady__face2.jpg);
+  background-image: url(img/lady__face2.jpg);
   border-radius: 180px;
 }
 .about__first-photo {
   width: 100%;
   max-width: 327px;
   height: 327px;
-  background-image: url(/img/lady_face1.jpg);
+  background-image: url(img/lady_face1.jpg);
   border-radius: 180px;
 }
 
 /* why-we */
 .why__we {
-  background-image: url(/img/background-vaves.jpg);
+  background-image: url(img/background-vaves.jpg);
 }
 .why__we-blok {
   width: 100%;
