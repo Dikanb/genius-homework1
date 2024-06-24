@@ -70,10 +70,11 @@ a {
 }
 /* header nav */
 .header {
-  background-image: url(img/top_backgraund.jpg);
+  background-image: url(img/top-section-backgraund-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .header__logo {
   padding-top: 16px;
   padding-left: 90px;
@@ -114,14 +115,12 @@ a {
 }
 .nav__icons {
   display: flex;
-  
 }
 .nav__icon {
   padding-right: 32px;
   display: flex;
-  
 }
-.face{
+.face {
   fill: var(--main-color);
 }
 /* top section */
@@ -171,6 +170,10 @@ a {
   padding-left: 14px;
 }
 /* about-us */
+.about-us {
+  background-image: url(img/background-vaves.jpg);
+  background-position-y: -80%;
+}
 
 .transform__text {
   margin-bottom: 40px;
@@ -221,6 +224,7 @@ a {
 /* why-we */
 .why__we {
   background-image: url(img/background-vaves.jpg);
+  background-position-y: 35%;
 }
 .why__we-blok {
   width: 100%;
@@ -265,23 +269,22 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.arrov{
- border: none;
+.arrov {
+  border: none;
   background-color: #ffffff;
 }
-.slider__vrap{
+.slider__vrap {
   display: flex;
   align-items: center;
   justify-content: center;
- white-space: nowrap;
+  white-space: nowrap;
 }
 
 /* find us */
 
 .find__top {
   display: flex;
-  justify-content:center;
-  
+  justify-content: center;
 }
 .find__inner {
   display: flex;
@@ -379,6 +382,10 @@ a {
 /*  */
 .footer {
   background-color: #011c44;
+  background-image: url(img/pexels-photo-8101532-PhotoRoom\ 1.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
 }
 
 .footer__nav {
@@ -412,7 +419,3 @@ a {
   filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(102deg)
     brightness(105%) contrast(104%);
 }
-.footer__img{
-
-}
-
