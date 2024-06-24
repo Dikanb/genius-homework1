@@ -114,9 +114,15 @@ a {
 }
 .nav__icons {
   display: flex;
+  
 }
 .nav__icon {
   padding-right: 32px;
+  display: flex;
+  
+}
+.face{
+  fill: var(--main-color);
 }
 /* top section */
 .container__top {
@@ -259,13 +265,28 @@ a {
   flex-direction: column;
   align-items: center;
 }
+.arrov{
+ border: none;
+  background-color: #ffffff;
+}
+.slider__vrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ white-space: nowrap;
+}
 
 /* find us */
 
 .find__top {
   display: flex;
-  justify-content: center;
+  justify-content:center;
+  
 }
+.find__inner {
+  display: flex;
+}
+
 .text__decor {
   font-family: "Play";
 }
@@ -354,9 +375,6 @@ a {
   display: flex;
   flex-direction: column;
 }
-.find__inner {
-  display: flex;
-}
 
 /*  */
 .footer {
@@ -394,3 +412,7 @@ a {
   filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(102deg)
     brightness(105%) contrast(104%);
 }
+.footer__img{
+
+}
+
