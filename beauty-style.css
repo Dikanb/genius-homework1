@@ -68,6 +68,10 @@ ul {
 a {
   text-decoration: none;
 }
+h2 {
+  text-align: center;
+}
+
 /* header nav */
 .header {
   background-image: url(img/top-section-backgraund-img.jpg);
@@ -170,10 +174,6 @@ a {
   padding-left: 14px;
 }
 /* about-us */
-.about-us {
-  background-image: url(img/background-vaves.jpg);
-  background-position-y: -80%;
-}
 
 .transform__text {
   margin-bottom: 40px;
@@ -194,8 +194,19 @@ a {
   font-weight: bold;
 }
 .about-us__inner {
+  width: 100%;
+  max-width: 1240px;
   display: flex;
+  justify-content: space-between;
   height: 695px;
+}
+.about__container {
+  background-image: url(img/Star1.svg), url(img/Star2.svg), url(img/Star3.svg),
+    url(img/background-vaves.jpg);
+  background-position-y: 336px, 32px, 269.5px, -80%;
+  background-position-x: 858px, 1212px, 1213px, 0;
+
+  background-repeat: no-repeat;
 }
 .about-us__photo {
   width: 100%;
@@ -203,6 +214,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
+  flex-shrink: 0;
 }
 .about__second-photo {
   display: flex;
@@ -222,44 +234,43 @@ a {
 }
 
 /* why-we */
-.why__we {
+.why-we__container {
   background-image: url(img/background-vaves.jpg);
   background-position-y: 35%;
 }
 .why__we-blok {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 316px;
+  height: 181px;
   border: 1px solid;
   border-radius: 32px;
   background-color: #ffffff;
 }
 .block__inner {
-  padding: 24px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 252px;
+  height: 133px;
+  text-align: center;
 }
 .block__inner-text {
   display: flex;
   justify-content: space-between;
-}
-.why__we-title {
-  font-family: "Play";
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 1.16;
-  margin-bottom: 40px;
-  padding-left: 314px;
 }
 .we__container {
   width: 100%;
   max-width: 1060px;
   margin-left: auto;
   margin-right: auto;
-}
-.why__we-inner {
   display: flex;
   justify-content: space-between;
+  gap: 56px;
 }
 
 /* our procids */
@@ -272,7 +283,14 @@ a {
 .arrov {
   border: none;
   background-color: #ffffff;
+  padding-left: 32px;
+  padding-right: 32px;
 }
+.slider {
+  display: flex;
+  gap: 16px;
+}
+
 .slider__vrap {
   display: flex;
   align-items: center;
@@ -281,13 +299,11 @@ a {
 }
 
 /* find us */
-
-.find__top {
-  display: flex;
-  justify-content: center;
-}
 .find__inner {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
 }
 
 .text__decor {
@@ -297,7 +313,6 @@ a {
   width: 100%;
   max-width: 423px;
   height: 481px;
-  margin: auto;
   border: 1px solid;
   border-radius: 32px;
   background-color: #011c44;
@@ -379,7 +394,7 @@ a {
   flex-direction: column;
 }
 
-/*  */
+/* footer */
 .footer {
   background-color: #011c44;
   background-image: url(img/pexels-photo-8101532-PhotoRoom\ 1.png);
