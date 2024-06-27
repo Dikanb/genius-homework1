@@ -73,7 +73,7 @@ h2 {
 }
 
 /* header nav */
-.header {
+.container__nav {
   background-image: url(img/top-section-backgraund-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -395,7 +395,7 @@ h2 {
 }
 
 /* footer */
-.footer {
+.footer__container {
   background-color: #011c44;
   background-image: url(img/pexels-photo-8101532-PhotoRoom\ 1.png);
   background-repeat: no-repeat;
