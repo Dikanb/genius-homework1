@@ -51,7 +51,8 @@ body {
   line-height: 1.16;
   margin: 0 auto;
 }
-address {
+address,
+button {
   font-style: normal;
 }
 h1,
@@ -64,6 +65,7 @@ p {
 }
 ul {
   list-style-type: none;
+  padding-inline-start: 0px;
 }
 a {
   text-decoration: none;
@@ -102,11 +104,14 @@ h2 {
 .header_nav {
   display: flex;
   justify-content: space-around;
-  flex-grow: 1;
+  flex-grow: 2;
+  flex-shrink: 0;
+  padding-left: 240px;
 }
 
 .nav__links {
   display: flex;
+  align-items: center;
   justify-content: space-around;
   flex-grow: 1;
 }
@@ -119,10 +124,17 @@ h2 {
 }
 .nav__icons {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
 }
 .nav__icon {
-  padding-right: 32px;
   display: flex;
+  justify-content: center;
+}
+.nav__icon-size {
+  width: 32px;
+  height: 32px;
 }
 .face {
   fill: var(--main-color);
@@ -160,6 +172,7 @@ h2 {
   border-radius: 32px;
   width: 219px;
   height: 53px;
+  font-family: Roboto;
   font-weight: 600;
 }
 .call__button:hover {
@@ -235,8 +248,14 @@ h2 {
 
 /* why-we */
 .why-we__container {
-  background-image: url(img/background-vaves.jpg);
-  background-position-y: 35%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(213, 231, 255, 1) 35%
+  );
+  /* background-image: url(img/background-vaves.jpg);
+  background-position-y: 35%; */
 }
 .why__we-blok {
   display: flex;
@@ -245,9 +264,9 @@ h2 {
   width: 100%;
   max-width: 316px;
   height: 181px;
-  border: 1px solid;
   border-radius: 32px;
   background-color: #ffffff;
+  box-shadow: 0px 5px 5px #a8c6f561;
 }
 .block__inner {
   display: flex;
@@ -363,6 +382,7 @@ h2 {
   height: 53px;
   padding-left: 14px;
   margin-bottom: 8px;
+  font-family: Roboto;
   font-size: 18px;
   font-weight: 600;
 }
@@ -429,8 +449,13 @@ h2 {
 }
 .icons__footer {
   color: var(--white-color);
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
 }
 .svg__img {
+  width: 32px;
+  height: 32px;
   filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(102deg)
     brightness(105%) contrast(104%);
 }
