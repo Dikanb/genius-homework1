@@ -644,4 +644,6 @@ h2 {
   position: absolute;
   top: 42px;
   right: 42px;
+  background-color: var(--main-color);
 }
+
