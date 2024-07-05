@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container container__nav">
+      <div class="container container__head">
         <div class="header__container">
           <div class="header__logo">
             <a class="logo" href="#">
@@ -44,44 +44,43 @@
             </li>
           </ul>
         </div>
-        <div class="container">
-          <div class="container__top">
-            <div class="top__inner">
-              <div class="header__subtitle">
-                <h3>Косметологічна клініка</h3>
-              </div>
-              <div class="header__h1">
-                <h1>
-                  <span class="header__title">Beauty</span>
-                  <span class="header__title">Zone</span>
-                </h1>
-              </div>
-              <div class="call__inside">
-                <div class="button">
-                  <button class="call__button">Замовити дзвінок</button>
-                </div>
-                <div class="under__button-text">
-                  <p>Запишись та отримай безкоштовну</p>
-                  <p>консультацію нашого косметолога</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
+       
       </div>
     </header>
     <main class="main">
       <section class="top">
-        <div class="container"></div>
+        <div class="container container__nav">
+            <div class="container__top">
+              <div class="top__inner">
+                <div class="header__subtitle">
+                  <h3>Косметологічна клініка</h3>
+                </div>
+                <div class="header__h1">
+                  <h1>
+                    <span class="header__title">Beauty</span>
+                    <span class="header__title">Zone</span>
+                  </h1>
+                </div>
+                <div class="call__inside">
+                  <div class="button">
+                    <button class="call__button modal-btn-open">Замовити дзвінок</button>
+                  </div>
+                  <div class="under__button-text">
+                    <p>Запишись та отримай безкоштовну</p>
+                    <p>консультацію нашого косметолога</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
       </section>
-
       <section class="about-us" id="about__us">
         <div class="container about__container">
           <div class="about-us__inner">
             <div class="about-us__text">
-              <h2 class="text__decor">
-                Перевтілюйтесь в<br />
-                <span class="blue">Beauty zone! </span>
+              <h2 class="text__decor-top">
+                Перевтілюйтесь <br>в <span class="blue">Beauty zone! </span>
               </h2>
               <p class="transform__text">
                 Наша косметологічна клініка пропонує вам професійні послуги
@@ -148,28 +147,35 @@
           <h2 class="text__decor">Наші <span class="blue">процедури</span></h2>
           <div class="procids__iner">
             <div class="slider__vrap">
-              <div class="arrov">
+              <div class="arrov__bloc">
                 <button class="arrov" type="button">
-                  <img src="img/Arrow1.svg" alt="#" />
+               <svg width="16" height="16">
+                <use href="img/icons.svg#arrow"></use>
+               </svg>
                 </button>
               </div>
 
              
                 <div class="slider">
-                  <div class="gradient">
+                  <div class="gradient__img">
+                    <div  class="gradient"></div>
                     <img src="img/mask1.jpg" class="slider__masks" alt="#" />
                   </div>
-                  <div  class="gradient">
+                  <div class="gradient__img">
+                    <div  class="gradient"></div>
                     <img src="img/mask2.jpg" class="slider__masks" alt="#" />
                   </div>
-                  <div class="gradient">
+                  <div class="gradient__img">
+                    <div  class="gradient"></div>
                     <img src="img/mask3.jpg" class="slider__masks" alt="#" />
                   </div>
                
               </div>
-              <div class="arrov">
-                <button class="arrov" type="button">
-                  <img src="img/Arrow2.svg" alt="#" />
+              <div class="arrov__bloc">
+                <button class="arrov next" type="button">
+                  <svg width="16" height="16">
+                    <use href="img/icons.svg#arrow"></use>
+                   </svg>
                 </button>
               </div>
             </div>
@@ -205,7 +211,9 @@
                   <span>та отримайте подарунок</span>
                 </h3>
                 <div class="form__imputs">
-                  <input
+                  <form>
+                  
+                    <input
                     class="imut_aria"
                     type="text"
                     placeholder="      Ваше ім'я та прізвище"
@@ -213,15 +221,17 @@
 
                   <input
                     class="imut_aria"
-                    type="text"
+                    type="tel"
                     placeholder="      Ваш номер телефону"
                   />
 
                   <input
                     class="imut_aria"
-                    type="text"
+                    type="email"
                     placeholder="       Ваша електронна пошта"
                   />
+                  </form>
+                  
                   <div class="button__sub">
                     <button class="reservation__buton">
                       Записатись безкоштовно
@@ -246,19 +256,19 @@
           </div>
           <div class="footer__list">
             <ul class="footer__list-item">
-              <li><a class="footer__nav" href="#about__us">Про нас</a></li>
-              <li><a class="footer__nav" href="#why-we"> Чому ми</a></li>
-              <li>
+              <li class="footer__item"><a class="footer__nav" href="#about__us">Про нас</a></li>
+              <li class="footer__item" ><a class="footer__nav" href="#why-we"> Чому ми</a></li>
+              <li class="footer__item">
                 <a class="footer__nav" href="#our__prosids">Наші процедури</a>
               </li>
-              <li><a class="footer__nav" href="#contactts">Контакти </a></li>
+              <li class="footer__item"><a class="footer__nav" href="#contactts">Контакти </a></li>
             </ul>
           </div>
           <div>
             <div class="footer__contacts">
               <address>
                 <ul>
-                  <li>
+                  <li class="footer__item">
                     <a
                       class="footer__nav"
                       href="tel:+380670000000"
@@ -266,7 +276,7 @@
                       >+38 (067) 640-23-00</a
                     >
                   </li>
-                  <li>
+                  <li class="footer__item">
                     <a
                       class="footer__nav"
                       target="_blank"
@@ -274,7 +284,7 @@
                       >beautyzone@gmail.com</a
                     >
                   </li>
-                  <li>
+                  <li class="footer__item"> 
                     <a
                       class="footer__nav"
                       target="_blank"
@@ -306,11 +316,62 @@
             </div>
           </div>
           <div>
-            <p>Політика конфіденційності</p>
-            <p>© 2022 Дані захищені</p>
+            <p class="footer__nav">Політика конфіденційності</p>
+            <p class="footer__nav">© 2022 Дані захищені</p>
           </div>
         </div>
       </div>
     </footer>
+    <div class="backdrop ">
+      <div class="modal ">
+        <button class="modal-btn-close" type="button">close</button>
+        <div class="drop__style">
+          <div>
+            <h2 class="text__decor decor__form">
+              Замовити<br>дзвінок
+            </h2>
+          </div>
+          <div class="">
+            <h3 class="reservation">
+              <span>Запишіться <span class="blue">безкоштовно </span></span>
+              <span>та отримайте подарунок</span>
+            </h3>
+            <div class="form__imputs">
+              <form>
+              
+                <input
+                class="imut_aria imput__drop"
+                type="text"
+                placeholder="      Ваше ім'я та прізвище"
+              />
+
+              <input
+                class="imut_aria imput__drop"
+                type="tel"
+                placeholder="      Ваш номер телефону"
+              />
+
+              <input
+                class="imut_aria imput__drop"
+                type="email"
+                placeholder="       Ваша електронна пошта"
+              />
+              </form>
+              
+              <div class="button__sub">
+                <button class="reservation__buton">
+                  Записатись безкоштовно
+                </button>
+                <div class="button__rule">
+                  <div>Натискаючи на кнопку я погоджуюсь</div>
+                  <div>з політикою конфіденційності</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="modal.js"></script>
   </body>
 </html>

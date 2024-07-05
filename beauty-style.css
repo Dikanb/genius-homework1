@@ -67,6 +67,7 @@ p {
 ul {
   list-style-type: none;
   padding-inline-start: 0px;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -76,10 +77,14 @@ h2 {
 }
 
 /* header nav */
-.container__nav {
-  background-image: url(img/top-section-backgraund-img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.header {
+  position: absolute;
+  width: 100%;
+  height: 106px;
+  top: 0;
+  left: 0;
+
+  background: #ffffff40;
 }
 
 .header__logo {
@@ -94,8 +99,17 @@ h2 {
   padding: 0 24px;
   padding-bottom: 96px;
 }
+.container__head {
+  padding: 0;
+  padding-top: 32px;
+}
 .header__container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+  height: 42px;
 }
 
 .header__links {
@@ -118,6 +132,7 @@ h2 {
 }
 .nav__link {
   color: #000;
+  transition-duration: 0.2s;
 }
 .nav__link:hover {
   color: var(--color-brand);
@@ -141,6 +156,21 @@ h2 {
   fill: var(--main-color);
 }
 /* top section */
+.top {
+}
+.container__nav {
+  background-image: linear-gradient(
+      89.38deg,
+      #ffffff 30.62%,
+      rgba(255, 255, 255, 0.850898) 41.31%,
+      rgba(255, 255, 255, 0.193204) 58.65%,
+      rgba(255, 255, 255, 0) 72.78%
+    ),
+    url(img/Group.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  height: 658px;
+}
 .container__top {
   display: block;
   width: 100%;
@@ -148,14 +178,15 @@ h2 {
   height: 408px;
   padding-left: 205px;
   padding-bottom: 126.5px;
-  padding-top: 16px;
+  padding-top: 122px;
 }
 
 /* .container__top{
   padding-bottom: 178px;
 } */
 
-.header__subtitle {
+.header__subtitle h3 {
+  font-family: "Roboto";
   font-size: 18px;
   font-weight: 400;
 }
@@ -175,6 +206,7 @@ h2 {
   height: 53px;
   font-family: Roboto;
   font-weight: 600;
+  transition-duration: 0.3s;
 }
 .call__button:hover {
   color: var(--main-color);
@@ -193,12 +225,23 @@ h2 {
   margin-bottom: 40px;
   font-size: 22px;
 }
+.text__decor-top {
+  font-family: "Play";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.16;
+  margin-bottom: 40px;
+  width: 499px;
+}
 .text__decor {
   font-family: "Play";
   font-size: 64px;
   font-weight: 700;
   line-height: 1.16;
   margin-bottom: 40px;
+}
+.text__decor-top .blue {
+  color: var(--color-brand);
 }
 .text__decor .blue {
   color: var(--color-brand);
@@ -221,6 +264,7 @@ h2 {
   background-position-x: 858px, 1212px, 1213px, 0;
 
   background-repeat: no-repeat;
+  background-size: auto, auto, auto, cover;
 }
 .about-us__photo {
   width: 100%;
@@ -293,6 +337,31 @@ h2 {
   gap: 56px;
 }
 
+.arrov {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  fill: var(--main-color);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--main-color);
+  cursor: pointer;
+  margin-right: 32px;
+  margin-left: 32px;
+  transition-duration: 0.3s;
+}
+.arrov:hover {
+  background-color: var(--color-brand);
+  fill: var(--white-color);
+}
+.arrov.next {
+  transform: rotate(180deg);
+}
+
 /* our procids */
 
 .procids__iner {
@@ -300,12 +369,7 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
-.arrov {
-  border: none;
-  background-color: #ffffff;
-  padding-left: 32px;
-  padding-right: 32px;
-}
+
 .slider {
   display: flex;
   justify-content: center;
@@ -319,10 +383,22 @@ h2 {
   justify-content: space-between;
   align-items: center;
 }
-.gradient{
+.gradient__img {
+  position: relative;
+}
+.gradient {
+  position: absolute;
+  top: 0px;
   width: 100%;
+  max-width: 344px;
   height: 100%;
-  background-image: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011C44 101.39%);
+  min-height: 456px;
+  background-image: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    #011c44 101.39%
+  );
   border-radius: 4px 120px;
 }
 
@@ -391,6 +467,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 32px;
 }
 .reservation .blue {
   color: var(--color-brand);
@@ -409,10 +486,15 @@ h2 {
   color: var(--white-color);
   border: 1px solid #747272;
   border-radius: 32px;
-  width: 310px;
+  width: 100%;
   height: 52px;
   background-color: var(--main-color);
   margin-bottom: 16px;
+}
+.imut_aria::placeholder {
+  color: #ffffff;
+  font-family: Roboto;
+  font-weight: 400;
 }
 
 .reservation__buton {
@@ -427,6 +509,7 @@ h2 {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 600;
+  transition-duration: 0.3s;
 }
 .reservation__buton:hover {
   color: var(--main-color);
@@ -467,15 +550,26 @@ h2 {
 
 .footer__nav {
   color: #ffffff;
+  margin-bottom: 16px;
+  transition-duration: 0.2s;
+}
+.footer__nav:hover {
+  color: var(--color-brand);
 }
 .footer__inner {
   padding-top: 56px;
   padding-left: 100px;
-  margin-top: 94px;
+
   /* gap: 20px; */
+}
+.footer__item {
+  padding-bottom: 16px;
 }
 .logo__footer {
   color: var(--color-brand);
+}
+.footer__list-item {
+  margin: 0;
 }
 .footer__contacts {
   width: 100%;
@@ -501,4 +595,53 @@ h2 {
   height: 32px;
   filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(102deg)
     brightness(105%) contrast(104%);
+}
+/* modal */
+
+.backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.4s, visibility 0.4s;
+}
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 723px;
+  height: 100%;
+  max-height: 681px;
+  background-color: var(--main-color);
+  border-radius: 32px;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.drop__style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 144px;
+  padding-left: 144px;
+}
+.decor__form {
+  color: #ffffff;
+  padding-top: 42px;
+}
+.imput__drop {
+  margin-bottom: 20px;
+}
+.modal-btn-close {
+  position: absolute;
+  top: 42px;
+  right: 42px;
 }
