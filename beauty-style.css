@@ -156,8 +156,7 @@ h2 {
   fill: var(--main-color);
 }
 /* top section */
-.top {
-}
+
 .container__nav {
   background-image: linear-gradient(
       89.38deg,
@@ -206,7 +205,7 @@ h2 {
   height: 53px;
   font-family: Roboto;
   font-weight: 600;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 .call__button:hover {
   color: var(--main-color);
@@ -220,6 +219,10 @@ h2 {
   padding-left: 14px;
 }
 /* about-us */
+.about-us__text {
+  padding-left: 100px;
+  padding-top: 40px;
+}
 
 .transform__text {
   margin-bottom: 40px;
@@ -252,27 +255,61 @@ h2 {
 }
 .about-us__inner {
   width: 100%;
-  max-width: 1240px;
+
   display: flex;
   justify-content: space-between;
   height: 695px;
 }
 .about__container {
-  background-image: url(img/Star1.svg), url(img/Star2.svg), url(img/Star3.svg),
-    url(img/background-vaves.jpg);
-  background-position-y: 336px, 32px, 269.5px, -80%;
-  background-position-x: 858px, 1212px, 1213px, 0;
-
+  background-image: url(img/background-vaves.jpg);
+  background-position-y: -80%;
+  background-position-x: 0;
   background-repeat: no-repeat;
-  background-size: auto, auto, auto, cover;
+  background-size: cover;
 }
+
+.stars {
+  position: absolute;
+}
+.stars:hover {
+  animation-name: spin__star;
+  animation-duration: 5s;
+  scale: 1.5;
+  cursor: pointer;
+  
+}
+.star1 {
+  padding-top: 336px;
+  padding-left: 858px;
+  fill: var(--main-color);
+}
+.star2 {
+  padding-top: 32px;
+  padding-left: 1212px;
+  fill: #2b7fff;
+}
+.star3 {
+  padding-top: 270px;
+  padding-left: 1213px;
+  fill: #747272;
+}
+
+@keyframes spin__star {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .about-us__photo {
   width: 100%;
   max-width: 499px;
   display: flex;
   flex-direction: column;
-  width: 100%;
   flex-shrink: 0;
+  padding-right: 100px;
 }
 .about__second-photo {
   display: flex;
@@ -323,6 +360,7 @@ h2 {
   height: 133px;
   text-align: center;
 }
+
 .block__inner-text {
   display: flex;
   justify-content: space-between;
@@ -352,7 +390,7 @@ h2 {
   cursor: pointer;
   margin-right: 32px;
   margin-left: 32px;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 .arrov:hover {
   background-color: var(--color-brand);
@@ -360,6 +398,12 @@ h2 {
 }
 .arrov.next {
   transform: rotate(180deg);
+}
+.we__svg {
+  fill: #2b7fff;
+}
+.we__swg {
+  padding-bottom: 8px;
 }
 
 /* our procids */
@@ -490,11 +534,15 @@ h2 {
   height: 52px;
   background-color: var(--main-color);
   margin-bottom: 16px;
+  padding-left: 33px;
 }
 .imut_aria::placeholder {
   color: #ffffff;
   font-family: Roboto;
   font-weight: 400;
+}
+.imut_aria:focus {
+  background-color: #747272;
 }
 
 .reservation__buton {
@@ -509,7 +557,7 @@ h2 {
   font-family: Roboto;
   font-size: 18px;
   font-weight: 600;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 .reservation__buton:hover {
   color: var(--main-color);
@@ -521,9 +569,20 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 15px;
+}
+.button__rule-in {
+  color: #747272;
+  text-decoration: underline;
+}
+.button__rule:hover {
+  color: var(--color-brand);
+}
+.button__rule-in:hover {
+  color: var(--color-brand);
 }
 .button__sub {
-  padding-left: 14px;
+  padding-left: 34px;
 }
 .beuti-logo__footer {
   color: var(--color-brand);
@@ -537,6 +596,9 @@ h2 {
   max-width: 310px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 34px;
 }
 
 /* footer */
@@ -590,12 +652,19 @@ h2 {
   justify-content: flex-start;
   gap: 24px;
 }
+
 .svg__img {
   width: 32px;
   height: 32px;
   filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(102deg)
     brightness(105%) contrast(104%);
 }
+.swg__align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* modal */
 
 .backdrop {
@@ -619,6 +688,7 @@ h2 {
   max-height: 681px;
   background-color: var(--main-color);
   border-radius: 32px;
+  overflow: auto;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -637,13 +707,10 @@ h2 {
   color: #ffffff;
   padding-top: 42px;
 }
-.imput__drop {
-  margin-bottom: 20px;
-}
 .modal-btn-close {
   position: absolute;
   top: 42px;
   right: 42px;
-  background-color: var(--main-color);
+  background-color: transparent;
+  border: none;
 }
-
