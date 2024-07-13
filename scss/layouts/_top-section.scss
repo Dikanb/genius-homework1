@@ -1,0 +1,78 @@
+.top {
+  padding-top: 71px;
+  background-image: linear-gradient(
+      56.68deg,
+      #ffffff 20.92%,
+      rgba(255, 255, 255, 0.78) 44.46%,
+      rgba(255, 255, 255, 0.2) 58.9%,
+      rgba(255, 255, 255, 0) 72.45%
+    ),
+    url(/img/image1576.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  @media screen and (min-width: $bp-tablet) {
+    background-image: linear-gradient(
+        89.38deg,
+        #ffffff 30.62%,
+        rgba(255, 255, 255, 0.850898) 41.31%,
+        rgba(255, 255, 255, 0.193204) 58.65%,
+        rgba(255, 255, 255, 0) 72.78%
+      ),
+      url(/img/Group.jpg);
+  }
+}
+.top__header {
+  padding-bottom: 32px;
+  @media screen and (min-width: $bp-tablet) {
+    padding-bottom: 40px;
+  }
+}
+.top__container {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 184px;
+  margin: auto;
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 529px;
+    height: 408px;
+    padding-left: 205px;
+    padding-bottom: 126.5px;
+    padding-top: 122px;
+    margin-left: 0;
+  }
+}
+
+.top__container-subtitle h3 {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+}
+.top__container-header {
+  font-family: "Play";
+  color: var(--color-brand);
+  font-size: 54px;
+  font-weight: 700;
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 114px;
+  }
+}
+.top__align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: $bp-tablet) {
+    display: block;
+  }
+}
+.top__button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: $bp-tablet) {
+ display: block;
+ 
+  }
+}

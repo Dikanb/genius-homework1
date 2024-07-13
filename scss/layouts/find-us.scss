@@ -1,0 +1,96 @@
+.find__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 32px;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+.text__decor {
+  font-family: "Play";
+}
+.find {
+  padding: 48px 57px;
+  font-family: "Roboto";
+  font-weight: 600;
+}
+.find__form {
+  width: 100%;
+  max-width: 423px;
+  height: 481px;
+  border: 1px solid;
+  border-radius: 32px;
+  background-color: #011c44;
+}
+.find-form {
+  padding: 48px 57px;
+  font-family: "Roboto";
+  font-weight: 600;
+}
+.reservation {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.reservation .blue {
+  color: var(--color-brand);
+}
+
+.find__form {
+  width: 100%;
+  max-width: 432px;
+  height: 481px;
+}
+.find__form-imput {
+  color: var(--white-color);
+  border: 1px solid #747272;
+  border-radius: 32px;
+  width: 100%;
+  height: 52px;
+  background-color: var(--main-color);
+  margin-bottom: 16px;
+  padding-left: 33px;
+}
+.find__form-imput::placeholder {
+  color: #ffffff;
+  font-family: Roboto;
+  font-weight: 400;
+}
+.find__form-imput:focus {
+  background-color: #747272;
+}
+
+.beuti-logo__footer {
+  color: var(--color-brand);
+  font-family: "Play";
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.find__form-imputs {
+  width: 100%;
+  max-width: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 34px;
+}
+.find__reservation {
+  padding-left: 34px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

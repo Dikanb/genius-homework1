@@ -1,0 +1,131 @@
+.about__us-text {
+  margin: auto;
+  @media screen and (min-width: 1280px) {
+    padding-left: 100px;
+    padding-top: 40px;
+  }
+}
+
+.about__us-paragraph {
+  margin: auto;
+  font-size: 22px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 1280px) {
+    padding-right: 40px;
+    margin-bottom: 40px;
+  }
+}
+.about__us-paragraph2 {
+  margin: auto;
+  font-size: 22px;
+  @media screen and (min-width: 1280px) {
+  }
+}
+.about-us-decor {
+  font-family: "Play";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.16;
+  margin-bottom: 40px;
+  width: 499px;
+}
+
+.about__us-paragraph2 .bold {
+  font-size: 22px;
+  font-weight: bold;
+}
+.about__us {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  height: 347px;
+  @media screen and (min-width: 1280px) {
+    height: 695px;
+  }
+}
+.about__container {
+  background-image: url(/img/background-vaves.jpg);
+  background-position-y: -80%;
+  background-position-x: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__us-stars {
+  position: absolute;
+  transform: translate(858px, 336px);
+}
+
+.about__us-star1 {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    transform: translate(858px, 336px);
+    fill: var(--main-color);
+    display: block;
+  }
+}
+.about__us-star1:hover,
+.about__us-star2:hover,
+.about__us-star3:hover {
+  animation-name: spin__star;
+  animation-duration: 3s;
+  scale: 2;
+}
+.about__us-star2 {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    transform: translate(1212px, 32px);
+    fill: #2b7fff;
+    display: block;
+  }
+}
+.about__us-star3 {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    transform: translate(1213px, 270px);
+    fill: #747274;
+    display: block;
+  }
+}
+
+@keyframes spin__star {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.about__us-photo {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+    max-width: 499px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding-right: 100px;
+  }
+}
+.about__us-photo2 {
+  display: flex;
+  align-self: flex-end;
+  width: 100%;
+  max-width: 327px;
+  height: 327px;
+  background-image: url(/img/lady__face2.jpg);
+  border-radius: 180px;
+}
+.about__us-photo1 {
+  width: 100%;
+  max-width: 327px;
+  height: 327px;
+  background-image: url(/img/lady_face1.jpg);
+  border-radius: 180px;
+}
+// .about-us-decor .blue{
+//   color: var(--color-brand);
+// }
