@@ -133,7 +133,7 @@
   width: 100%;
   max-width: 327px;
   height: 327px;
-  background-image: url(/img/lady__face2.jpg);
+  background-image: url(../img/lady__face2.jpg);
   border-radius: 180px;
 }
 
@@ -141,6 +141,6 @@
   width: 100%;
   max-width: 327px;
   height: 327px;
-  background-image: url(/img/lady_face1.jpg);
+  background-image: url(../img/lady_face1.jpg);
   border-radius: 180px;
 }/*# sourceMappingURL=about-us.css.map */
