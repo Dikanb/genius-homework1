@@ -66,13 +66,12 @@
     display: block;
   }
 }
-.top__button{
+.top__button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   @media screen and (min-width: $bp-tablet) {
- display: block;
- 
+    display: block;
   }
 }

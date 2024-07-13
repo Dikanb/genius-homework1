@@ -3,37 +3,35 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
+  src: url("/fonts/roboto-v30-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2");
+  src: url("/fonts/roboto-v30-latin-500.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
+  src: url("/fonts/roboto-v30-latin-700.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Play";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2"),
-    url("../fonts/play-v19-latin-regular.ttf") format("truetype");
+  src: url("/fonts/play-v19-latin-regular.woff2") format("woff2"), url("/fonts/play-v19-latin-regular.ttf") format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: "Play";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/play-v19-latin-700.woff2") format("woff2"),
-    url("../fonts/play-v19-latin-700.ttf") format("truetype");
+  src: url("/fonts/play-v19-latin-700.woff2") format("woff2"), url("/fonts/play-v19-latin-700.ttf") format("truetype");
 }
 body {
   color: black;
@@ -261,28 +259,14 @@ h2 {
 
 .top {
   padding-top: 71px;
-  background-image: linear-gradient(
-      56.68deg,
-      #ffffff 20.92%,
-      rgba(255, 255, 255, 0.78) 44.46%,
-      rgba(255, 255, 255, 0.2) 58.9%,
-      rgba(255, 255, 255, 0) 72.45%
-    ),
-    url(/img/image1576.jpg);
+  background-image: linear-gradient(56.68deg, #ffffff 20.92%, rgba(255, 255, 255, 0.78) 44.46%, rgba(255, 255, 255, 0.2) 58.9%, rgba(255, 255, 255, 0) 72.45%), url(/img/image1576.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 }
 @media screen and (min-width: 1280px) {
   .top {
-    background-image: linear-gradient(
-        89.38deg,
-        #ffffff 30.62%,
-        rgba(255, 255, 255, 0.850898) 41.31%,
-        rgba(255, 255, 255, 0.193204) 58.65%,
-        rgba(255, 255, 255, 0) 72.78%
-      ),
-      url(/img/Group.jpg);
+    background-image: linear-gradient(89.38deg, #ffffff 30.62%, rgba(255, 255, 255, 0.850898) 41.31%, rgba(255, 255, 255, 0.193204) 58.65%, rgba(255, 255, 255, 0) 72.78%), url(/img/Group.jpg);
   }
 }
 
@@ -503,11 +487,7 @@ h2 {
 
 .we__contain {
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    0deg,
-    rgb(255, 255, 255) 0%,
-    rgb(213, 231, 255) 35%
-  );
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(213, 231, 255) 35%);
 }
 
 .we-decor {
@@ -656,12 +636,7 @@ h2 {
   max-width: 344px;
   height: 100%;
   min-height: 456px;
-  background-image: linear-gradient(
-    180.05deg,
-    rgba(1, 28, 68, 0) 48.53%,
-    rgba(1, 28, 68, 0.725825) 84.61%,
-    #011c44 101.39%
-  );
+  background-image: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011c44 101.39%);
   border-radius: 4px 120px;
 }
 
@@ -905,8 +880,7 @@ h2 {
 .footer__icon-swg-img {
   width: 32px;
   height: 32px;
-  filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(102deg)
-    brightness(105%) contrast(104%);
+  filter: invert(96%) sepia(96%) saturate(0%) hue-rotate(102deg) brightness(105%) contrast(104%);
 }
 
 .footer__icon-swg {
@@ -981,4 +955,4 @@ h2 {
   align-items: center;
   justify-content: center;
   padding-right: 34px;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
