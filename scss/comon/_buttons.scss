@@ -25,7 +25,8 @@
   background-color: var(--color-brand);
   border: 2px solid var(--color-brand);
   border-radius: 32px;
-  width: 281px;
+  width: 100%;
+  max-width: 281px;
   height: 53px;
   padding-left: 14px;
   margin-bottom: 8px;
