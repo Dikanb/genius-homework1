@@ -1,6 +1,5 @@
 .find__inner {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column-reverse;
   gap: 32px;
@@ -17,11 +16,24 @@
   font-family: "Play";
 }
 .find {
-  padding: 48px 57px;
+  padding: o;
   font-family: "Roboto";
   font-weight: 600;
+  @media screen and (min-width: 1280px) {
+    padding: 48px 57px;
+  }
+}
+.find-container {
+  padding-bottom: 0;
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 96px;
+  }
 }
 .find__form {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 423px;
   height: 481px;
@@ -95,4 +107,21 @@
   align-items: center;
   flex-direction: column;
   justify-content: stretch;
+}
+.find__map {
+  width: 100%;
+  max-width: 752px;
+  height: 100%;
+  @media screen and (min-width: 1280px) {
+    width: 600px;
+    height: 481px;
+    border-radius: 32px;
+  }
+}
+.find__map-iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 1280px) {
+  }
 }

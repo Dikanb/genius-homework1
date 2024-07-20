@@ -31,25 +31,27 @@
                 <a class="header__link" href="#contactts">Контакти </a>
               </li>
             </ul>
+            <div>
+              <ul class="header__icons">
+                <li class="header__icon">
+                  <a href="tel:+380670000000" title="Phone">
+                    <img class="" src="img/phone-icons.svg" alt=""
+                  /></a>
+                </li>
+                <li class="header__icon">
+                  <a target="_blank" href="https://www.facebook.com/">
+                    <img class="" src="img/facebook-logo.svg" alt=""
+                  /></a>
+                </li>
+                <li class="header__icon">
+                  <a target="_blank" href="https://www.instagram.com/">
+                    <img class="" src="img/insta-logo.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
 
-            <ul class="header__icons">
-              <li class="header__icon">
-                <a href="tel:+380670000000" title="Phone">
-                  <img class="" src="img/phone-icons.svg" alt=""
-                /></a>
-              </li>
-              <li class="header__icon">
-                <a target="_blank" href="https://www.facebook.com/">
-                  <img class="" src="img/facebook-logo.svg" alt=""
-                /></a>
-              </li>
-              <li class="header__icon">
-                <a target="_blank" href="https://www.instagram.com/">
-                  <img class="" src="img/insta-logo.svg" alt=""
-                /></a>
-              </li>
-            </ul>
-            <button class="header__burger" type="button">
+            <button class="header__burger menu-btn-open" type="button">
               <svg width="24" height="24">
                 <use
                   class="header__burger-swg-img"
@@ -57,6 +59,16 @@
                 ></use>
               </svg>
             </button>
+            <div class="mobile-menu">
+              <button class="menu-btn-close" type="button">
+                <svg width="16" height="16">
+                  <use
+                    class=""
+                    href="img/symbol-defs copy.svg#icon-Group"
+                  ></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -111,7 +123,7 @@
                 <br />
                 з догляду за шкірою обличчя та тіла.
               </p>
-              <p class="about__us-paragraph2">
+              <p class="about__us-paragraph">
                 B <span class="bold">beauty zone </span>beauty zone ми
                 гарантуємо найвищі стандарти якості <br />та приємний сервіс.
                 Наші косметологічні процедури та препарати <br />допоможуть вам
@@ -226,16 +238,14 @@
         </div>
       </section>
       <section class="find" id="contactts">
-        <div class="container">
+        <div class="container find-container">
           <h2 class="we-decor">Як нас <span class="blue">знайти</span></h2>
 
           <div class="find__inner">
             <div class="find__map-iframe">
               <iframe
+                class="find__map"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2537.4757916685044!2d30.7752234!3d50.5067134!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2sTarasa%20Shevchenka%20St%2C%205%2C%20Brovary%2C%20Kyivs&#39;ka%20oblast%2C%2007400!5e0!3m2!1sen!2sua!4v1718102539572!5m2!1sen!2sua"
-                width="600"
-                height="481"
-                style="border-radius: 32px"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
@@ -385,7 +395,7 @@
       <div class="modal">
         <button class="modal-btn-close" type="button">
           <svg width="16" height="16">
-            <use class="ww" href="img/symbol-defs copy.svg#icon-Group"></use>
+            <use class="" href="img/symbol-defs copy.svg#icon-Group"></use>
           </svg>
         </button>
         <div class="backdrop__style">
@@ -445,5 +455,6 @@
       </div>
     </div>
     <script src="modal.js"></script>
+    <script src="modal-menu.js"></script>
   </body>
 </html>

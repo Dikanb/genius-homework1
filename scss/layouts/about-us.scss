@@ -1,27 +1,40 @@
-.about__us-text {
-  margin: auto;
+.about__us {
+  width: 100%;
+  margin: 0;
   @media screen and (min-width: 1280px) {
-    padding-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    height: 695px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.about__container {
+  background-image: url(/img/background-vaves.jpg);
+  background-position-y: -80%;
+  background-position-x: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__us-text {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 56px;
+  @media screen and (min-width: 1280px) {
     padding-top: 40px;
   }
 }
 
 .about__us-paragraph {
-  margin: auto;
   font-size: 22px;
-  padding-top: 24px;
   padding-bottom: 16px;
   @media screen and (min-width: 1280px) {
-    padding-right: 40px;
     margin-bottom: 40px;
+    padding: 0;
   }
 }
-.about__us-paragraph2 {
-  margin: auto;
-  font-size: 22px;
-  @media screen and (min-width: 1280px) {
-  }
-}
+
 .about-us-decor {
   font-family: "Play";
   font-size: 64px;
@@ -31,26 +44,9 @@
   width: 499px;
 }
 
-.about__us-paragraph2 .bold {
+.about__us-paragraph .bold {
   font-size: 22px;
   font-weight: bold;
-}
-.about__us {
-  width: 100%;
-
-  display: flex;
-  justify-content: space-between;
-  height: 347px;
-  @media screen and (min-width: 1280px) {
-    height: 695px;
-  }
-}
-.about__container {
-  background-image: url(/img/background-vaves.jpg);
-  background-position-y: -80%;
-  background-position-x: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .about__us-stars {
