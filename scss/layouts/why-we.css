@@ -34,20 +34,6 @@
   box-shadow: 0px 5px 5px rgba(168, 198, 245, 0.3803921569);
   margin: 16px;
 }
-@media screen and (min-width: 1280px) {
-  .we__blok {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 316px;
-    height: 181px;
-    border-radius: 32px;
-    background-color: #ffffff;
-    box-shadow: 0px 5px 5px rgba(168, 198, 245, 0.3803921569);
-  }
-}
-
 .we__blok-inner {
   display: flex;
   flex-direction: column;
@@ -57,11 +43,6 @@
   max-width: 252px;
   height: 133px;
   text-align: center;
-}
-
-.we__blok-text {
-  display: flex;
-  justify-content: space-between;
 }
 
 .we__container {

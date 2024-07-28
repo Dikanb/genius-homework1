@@ -1,9 +1,10 @@
 .footer__container {
   background-color: #011c44;
-  background-image: url(img/pexels-photo-8101532-PhotoRoom\ 1.png);
+  background-image: url(../img/pexels-photo-8101532-PhotoRoom\ 1.png);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
+  padding: 56px;
 }
 .footer__inner {
   display: flex;
@@ -14,12 +15,13 @@
   @media screen and (min-width: 1280px) {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
     font-weight: 400;
     font-size: 16px;
     flex-direction: row;
     color: var(--white-color);
-    padding-top: 56px;
-    padding-left: 100px;
+
+    padding-left: 44px;
   }
   .footer__nav {
     color: #ffffff;
@@ -37,9 +39,8 @@
 }
 .footer__logo {
   color: var(--color-brand);
-  margin-bottom: 20px;
-  margin-top: 20px;
   @media screen and (min-width: 1280px) {
+    margin: 0;
   }
 }
 .footer__list-item {
@@ -60,7 +61,9 @@
   display: flex;
   justify-content: space-between;
 }
-
+.footer__icon-swg:hover {
+  fill: var(--color-brand);
+}
 .icons__footer {
   color: var(--white-color);
   display: flex;

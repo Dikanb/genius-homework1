@@ -47,6 +47,10 @@ button {
   font-style: normal;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 h1,
 h2,
 h4,
@@ -221,6 +225,7 @@ h2 {
     justify-content: space-between;
     height: 42px;
     padding: 32px;
+    padding-right: 102px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -525,20 +530,6 @@ h2 {
   box-shadow: 0px 5px 5px rgba(168, 198, 245, 0.3803921569);
   margin: 16px;
 }
-@media screen and (min-width: 1280px) {
-  .we__blok {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 316px;
-    height: 181px;
-    border-radius: 32px;
-    background-color: #ffffff;
-    box-shadow: 0px 5px 5px rgba(168, 198, 245, 0.3803921569);
-  }
-}
-
 .we__blok-inner {
   display: flex;
   flex-direction: column;
@@ -548,11 +539,6 @@ h2 {
   max-width: 252px;
   height: 133px;
   text-align: center;
-}
-
-.we__blok-text {
-  display: flex;
-  justify-content: space-between;
 }
 
 .we__container {
@@ -690,6 +676,16 @@ h2 {
   .photo-hiden {
     display: block;
   }
+}
+
+.prosids__masks-text {
+  position: absolute;
+  padding-left: 115px;
+  padding-bottom: 32px;
+  width: 152px;
+  height: 52px;
+  color: white;
+  z-index: 2;
 }
 
 .find__inner {
@@ -845,10 +841,11 @@ h2 {
 }
 .footer__container {
   background-color: #011c44;
-  background-image: url(img/pexels-photo-8101532-PhotoRoom\ 1.png);
+  background-image: url(../img/pexels-photo-8101532-PhotoRoom\ 1.png);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
+  padding: 56px;
 }
 
 .footer__inner {
@@ -863,12 +860,12 @@ h2 {
   .footer__inner {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
     font-weight: 400;
     font-size: 16px;
     flex-direction: row;
     color: var(--white-color);
-    padding-top: 56px;
-    padding-left: 100px;
+    padding-left: 44px;
   }
 }
 .footer__inner .footer__nav {
@@ -886,9 +883,13 @@ h2 {
 
 .footer__logo {
   color: var(--color-brand);
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
+@media screen and (min-width: 1280px) {
+  .footer__logo {
+    margin: 0;
+  }
+}
+
 .footer__list-item {
   margin: 0;
   display: flex;
@@ -910,6 +911,10 @@ h2 {
 .footer__icon {
   display: flex;
   justify-content: space-between;
+}
+
+.footer__icon-swg:hover {
+  fill: var(--color-brand);
 }
 
 .icons__footer {
